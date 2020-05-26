@@ -6,15 +6,15 @@
 
 ##############################################################################
 
-theEnv: "prod"
+theEnv: "uat"
 
-theEnv_name: "ISLAND-PROD"
+theEnv_name: "ISLAND-UAT"
 
-theEnv_domain: "islp01"
+theEnv_domain: "islu01"
 
 theEnv_artifact_label: "island"
 
-theEnv_trexoneweb: "http://192.168.33.99:8080/islp01/TRexOneWeb/"
+theEnv_trexoneweb: "http://192.168.33.99:8080/islu01/gameoflife/"
 
 ##############################################################################
 
