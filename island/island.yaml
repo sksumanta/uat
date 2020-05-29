@@ -35,3 +35,9 @@ domain:
     port: 
 
       http: "8080"
+      
+  package_detail:
+    ua_package:   # declare the dictionary in python format
+    - { packageName: dictionary first packageName  ,  label: dictionary first label  }
+    - { packageName: dictionary second packageName  ,  label: dictionary second label }
+
