@@ -21,23 +21,39 @@ theEnv_trexoneweb: "http://192.168.33.99:8080/islu01/gameoflife/"
 # tomcat Details for Domain 
 
 ##############################################################################
-
-domain:
-
-  servertype: "app"
-
-  server:
-
-  - name: "server01"
-
-    host: "192.168.33.99"
-
-    port: 
-
-      http: "8080"
-      
-  package_detail:
-    ua_package:   # declare the dictionary in python format
-    - { packageName: dictionary first packageName  ,  label: dictionary first label  }
-    - { packageName: dictionary second packageName  ,  label: dictionary second label }
-
+build-org:
+    product-suite:
+    build-developer:
+    build-reviewer:
+    build-tester:
+build-details:
+    change-type: # promote/defect/patch
+    change-id:
+    jira-card: ABC-000
+package_details:
+    first-package:
+     [    [ package_name:'a345gdere' , package_label:'202016042405'],
+          [package_name:'a345fdere' , package_label:'202030042405' ]   ]   
+    sec-package: 
+     []   # ​​when: package_details.up-package|length > 0
+    third-package:
+     [ package-name package-label ]
+my-deployment:
+    my-deployment-date: "YYYY/MM/DD"
+    my-deployment-areas:
+        my: true
+    my-build-test:
+        sanity: false
+        sanity_result: false
+        regression: false
+your-deployment:
+    your-deployment-date:
+    # All deployment areas should be false and developer should set it to true based on requirements. It owns mnay challanges
+    # Or, set your-deployment-areas to true and deploy change to all area on your level. This has its own challanges.
+    your-deployment-areas:
+        your: false
+        qa1: false
+        qa8: false
+    your-build-test:
+        sanity: false
+        regression: false
