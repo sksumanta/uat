@@ -32,12 +32,15 @@ build_details:
     jira_card: ABC_000
 package_details:
     first_package:
-     [ [ package_name: 'a345gdere' , package_label: '202016042405'],
-          [package_name: 'a345fdere' , package_label: '202030042405' ] ]   
+       - package_name: a345gdere
+         package_label: 202016042405
+       - package_name: a345fdere
+         package_label: 202030042405    
     sec_package: 
-     []   # ​​when: package_details.up_package|length > 0
+       -   # ​​when: package_details.up_package|length > 0
     third_package:
-     [ package_name package_label ]
+       - package_name: 
+         package_label 
 my_deployment:
     my_deployment_date: "YYYY/MM/DD"
     my_deployment_areas:
