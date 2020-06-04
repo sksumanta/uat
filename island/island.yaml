@@ -40,7 +40,7 @@ package_details:
        -   # ​​when: package_details.up_package|length > 0
     third_package:
        - package_name: 
-         package_label 
+         package_label: 
 my_deployment:
     my_deployment_date: "YYYY/MM/DD"
     my_deployment_areas:
